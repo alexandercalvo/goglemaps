@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="./css/style,css" />
+    <title>Document</title>
+    
+    <style>
+#map {
+  height: 100vh;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-template-column-3-4 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.input {
+  display: flex;
+  width: 90%;
+  height: 2rem;
+}
+
+.bg-gray {
+  background-color: aliceblue;
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+        </style>
+</head>
+
+<body class="body">
+ <div class="grid-template-column-3-4">
+    <div>
+        <div id="map" class="googleMaps""></div>
+    </div>
+    <div class="bg-gray d-flex justify-content-center mt-1">
+        <input type="text" id="place-input" class="input" />
+    </div>
+  </div>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoHeExtkgNUJfkXY_gYLjUkBfbvq4IrJ4=&loading=async&libraries=places&callback=inicializarMapa">
+</script>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
