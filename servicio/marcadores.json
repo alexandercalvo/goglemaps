@@ -1,0 +1,135 @@
+{
+    "properties": [
+      {
+        "address": "Emprendimiento #1",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "home",
+        "bed": 5,
+        "bath": 4.5,
+        "size": 300,
+        "position": {
+          "lat": -3.7693,
+          "lng": -70.2345
+        }
+      },
+      {
+        "address": "Emprendimiento #2",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "building",
+        "bed": 4,
+        "bath": 3,
+        "size": 200,
+        "position": {
+          "lat": 5.3456,
+          "lng": -71.8893
+        }
+      },
+      {
+        "address": "Emprendimiento #3",
+        "description": "pequeña descripcion del emprendimiento",
+       "link":"https://www.instagram.com/velagypsy/",
+        "type": "warehouse",
+        "bed": 4,
+        "bath": 4,
+        "size": 800,
+        "position": {
+          "lat": 2.5801,
+          "lng": -76.8157
+        }
+      },
+      {
+        "address": "Emprendimiento #4",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "store-alt",
+        "bed": 2,
+        "bath": 1,
+        "size": 210,
+        "position": {
+          "lat":  6.9253,
+          "lng":-73.4058
+        }
+      },
+      {
+        "address": "Emprendimiento #5",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "home",
+        "bed": 4,
+        "bath": 3,
+        "size": 200,
+        "position": {
+          "lat": 5.6532,
+          "lng": -77.1328
+        }
+      },
+      {
+        "address": "Emprendimiento #6",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "warehouse",
+        "bed": 5,
+        "bath": 4,
+        "size": 700,
+        "position": {
+          "lat": 3.9008,
+          "lng":  -73.8941
+        }
+      },
+      {
+        "address": "Emprendimiento #7",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "building",
+        "bed": 4,
+        "bath": 4,
+        "size": 600,
+        "position": {
+          "lat": 5.4461,
+          "lng": -73.3337
+        }
+      },
+      {
+        "address": "Emprendimiento #8",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "home",
+        "bed": 3,
+        "bath": 2,
+        "size": 100,
+        "position": {
+          "lat": 6.5112,
+          "lng": -75.7522
+        }
+      },
+      {
+        "address": "Emprendimiento #9",
+        "description": "pequeña descripcion del emprendimiento",
+        "link":"https://www.instagram.com/velagypsy/",
+        "type": "store-alt",
+        "bed": 3,
+        "bath": 2,
+        "size": 450,
+        "position": {
+          "lat": 1.2814,
+          "lng": 77.4011
+        }
+      },
+      {
+        "address": "Emprendimiento #10",
+        "description": "pequeña descripcion del emprendimiento",
+       "link":"https://www.instagram.com/velagypsy/",
+        "type": "home",
+        "bed": 4,
+        "bath": 3.5,
+        "size": 500,
+        "position": {
+          "lat": 1.2525,
+          "lng": -70.2358
+        }
+      }
+    ]
+  }
+  

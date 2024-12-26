@@ -1,63 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="./css/style,css" />
-    <title>Document</title>
+<html>
+  <head>
+    <title>Place Autocomplete map</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="place-autocomplete-card" id="place-autocomplete-card">
+      <p>Search for a place here:</p>
+    </div>
+    <div id="map"></div>
+ 
     
-    <style>
-#map {
-  height: 100vh;
-}
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+    <div class="prueba"></div>
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyCoHeExtkgNUJfkXY_gYLjUkBfbvq4IrJ4", v: "beta"});</script>
 
-.grid-template-column-3-4 {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-}
-.input {
-  display: flex;
-  width: 90%;
-  height: 2rem;
-}
-
-.bg-gray {
-  background-color: aliceblue;
-}
-
-.d-flex {
-  display: flex;
-}
-.justify-content-center {
-  justify-content: center;
-}
-
-.mt-1 {
-  margin-top: 1rem;
-}
-
-        </style>
-</head>
-
-<body class="body">
- <div class="grid-template-column-3-4">
-    <div>
-        <div id="map" class="googleMaps""></div>
+    <template id="template-modal">
+      
+        <span id="place-displayname" class="title"></span>
+        <span id="place-address" class="place-address"></span>
+      
+    </template>
+    <template id="template-marcador">
+      <div class="icon">
+        <i aria-hidden="true" class="fa fa-icon marcador-title" ></i>
+        <span class="fa-sr-only"></span>
     </div>
-    <div class="bg-gray d-flex justify-content-center mt-1">
-        <input type="text" id="place-input" class="input" />
+    <div class="details">
+        <div class="price"></div>
+        <div class="address"></div>
+        <div class="features">
+        <div>
+            <i aria-hidden="true" class="fa fa-certificate fa-lg bed" title="Calificación"></i>
+            <span class="fa-sr-only">Calificación</span>
+            <span class="span-bedroom"></span>
+        </div>
+        <div>
+            <i aria-hidden="true" class="fa fa-kiwi-bird  fa-lg bath" title="dato aleatorio"></i>
+            <span class="fa-sr-only">aves</span>
+            <span class="span-bathroom"></span>
+        </div>
+        <div>
+            <i aria-hidden="true" class="fa fa-ruler fa-lg size" title="size"></i>
+            <span class="fa-sr-only">size</span>
+            <a class="link-emprendimiento">ver mas</a>
+        </div>
+        </div>
     </div>
-  </div>
-<script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoHeExtkgNUJfkXY_gYLjUkBfbvq4IrJ4=&loading=async&libraries=places&callback=inicializarMapa">
-</script>
-
-<script src="./js/script.js"></script>
-</body>
+    </template>
+  </body>
 </html>
+
+
